@@ -1,0 +1,5 @@
+<div class="marvel-item" (click)="setItem(item)" routerLink="/detail/{{item.id}}">
+    <img [src]="getImg(item)" alt="resource">
+    <span class="title">{{item.title}}</span>
+    <span class="subtitle">{{item.description}}</span>
+</div>

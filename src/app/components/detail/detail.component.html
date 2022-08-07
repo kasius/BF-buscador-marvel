@@ -1,0 +1,11 @@
+<div class="row-detail">
+<button routerLink="/">Back</button>
+<h1>Comics</h1>
+<h5 *ngFor="let item of (marvelDataItem$ | async)">{{item.name}}</h5>
+<br>
+<h1>Series</h1>
+<h5 *ngFor="let item of (marvelDataItemSeries$ | async)">{{item.name}}</h5>
+<br>
+<h1>Stories</h1>
+<h5 *ngFor="let item of (marvelDataItemStories$ | async)">{{item.name}}</h5>
+</div>

@@ -1,0 +1,43 @@
+@import "../../../assets/scss/variables";
+
+.marvel-item {
+  width: 100%;
+  height: max-content;
+  border-radius: $border-radius;
+  cursor: pointer;
+  img {
+    width: 100%;
+    margin-bottom: $padding-xs;
+    border-radius: $border-radius;
+  }
+  span {
+    display: block;
+  }
+  .title {
+    font-size: 14px;
+    font-family: "Roboto Black", sans-serif;
+  }
+  .subtitle {
+    font-size: 20px;
+    font-family: "Roboto Light", sans-serif;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* number of lines to show */
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+    &:hover {
+      font-family: "Roboto Medium", sans-serif;
+    }
+  }
+  .description {
+    font-size: 18px;
+    font-family: "Roboto Light", sans-serif;
+    margin-bottom: $padding;
+  }
+  .title,
+  .subtitle,
+  .description {
+    margin-left: $padding-xs;
+  }
+}

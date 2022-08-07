@@ -1,0 +1,82 @@
+@import "../../../assets/scss/variables";
+
+.marvel {
+  padding: $padding;
+  &-img {
+    text-align: center;
+  }
+  &-row-search {
+    text-align: center;
+  }
+  &-search {
+    margin: $padding 0 $padding-xs 0;
+    width: 90%;
+    max-width: 400px;
+    border-radius: $border-radius;
+    height: 60px;
+    border: 1px solid $border;
+    padding: $padding-xs;
+    color: $text;
+    font-size: 20px;
+    font-family: "Roboto Medium", sans-serif;
+    color: $dark;
+  }
+  &-row-filter {
+    text-align: center;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin-bottom: $padding;
+    overflow-x: scroll;
+    button {
+      background-color: transparent;
+      border: 0px;
+      outline: none;
+      margin: 4px $padding-xs/2;
+      color: $white;
+      padding: 4px;
+      font-family: "Roboto Light", sans-serif;
+      float: left;
+      min-width: 80px;
+    }
+    .active {
+      color: $second;
+      border-bottom: 3px solid $white;
+      font-family: "Roboto Medium", sans-serif;
+    }
+  }
+  &-row-filter-scroll {
+    margin: auto;
+    height: 40px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    button {
+      font-weight: 900;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .marvel {
+    &-search {
+      width: 100%;
+    }
+  }
+  .marvel-row-filter-scroll {
+    display: block;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
